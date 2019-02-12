@@ -17,7 +17,7 @@ namespace Invest_Cloud_Technical.Controllers
         public string Index()
         {
             Random rnd = new Random();
-            int size = 2; /*rnd.Next(2, 1000)*/;
+            int size = rnd.Next(2, 1000);
 
             //Populate Matrix Data against Array Size by using Get/init
             using (var client1 = new HttpClient())
